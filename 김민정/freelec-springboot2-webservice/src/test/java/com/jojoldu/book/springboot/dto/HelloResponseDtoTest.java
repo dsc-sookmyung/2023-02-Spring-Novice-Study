@@ -1,4 +1,4 @@
-package com.jojoldu.book.freelecspringboot2webservice.dto;
+package com.jojoldu.book.springboot.dto;
 
 import com.jojoldu.book.springboot.web.dto.HelloResponseDto;
 import org.junit.jupiter.api.Test;
