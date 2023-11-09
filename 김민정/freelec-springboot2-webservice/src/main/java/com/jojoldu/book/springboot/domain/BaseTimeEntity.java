@@ -1,4 +1,4 @@
-package com.jojoldu.book.springboot.domain.posts;
+package com.jojoldu.book.springboot.domain;
 
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;
