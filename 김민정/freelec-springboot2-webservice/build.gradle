@@ -23,6 +23,7 @@ dependencies {
 	implementation 'com.h2database:h2' // h2는 인메모리 관계형 DB, 별도의 설치 없이 프로젝트 의존성만으로 관리 가능
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.springframework.boot:spring-boot-starter-mustache'
+	testImplementation 'org.springframework.boot:spring-boot-starter-mustache'
 }
 
 tasks.named('test') {
