@@ -17,6 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class PostsRepositoryTest {
+
     @Autowired
     PostsRepository postsRepository;
 
@@ -24,7 +25,6 @@ public class PostsRepositoryTest {
     public void cleanup() {
         postsRepository.deleteAll();
     }
-
 
     @Test
     public void 게시글저장_불러오기() {
