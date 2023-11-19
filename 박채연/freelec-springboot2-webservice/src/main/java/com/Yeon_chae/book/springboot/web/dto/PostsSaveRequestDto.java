@@ -20,8 +20,6 @@ public class PostsSaveRequestDto {
         this.author = author;
     }
 
-    @Builder
-
 
     public Posts toEntity() {
         return Posts.builder()
