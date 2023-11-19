@@ -1,9 +1,12 @@
 package com.jojoldu.book.springboot.web.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.jojoldu.book.springboot.domain.posts.Posts;
+import lombok.Getter;
 
 import java.time.LocalDateTime;
 
+@Getter
 public class PostsListResponseDto {
 
     private Long id;
@@ -12,7 +15,7 @@ public class PostsListResponseDto {
     private LocalDateTime modifiedDate;
 
     public PostsListResponseDto(Posts entity) {
-        Long id = entity.getId();
+        this.id = entity.getId();
         this.title = entity.getTitle();
         this.author = entity.getAuthor();
         this.modifiedDate = entity.getModifiedDate();
