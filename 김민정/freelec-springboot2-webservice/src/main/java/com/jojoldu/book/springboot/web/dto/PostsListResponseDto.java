@@ -6,6 +6,7 @@ import lombok.Getter;
 
 import java.time.LocalDateTime;
 
+@JsonFormat
 @Getter
 public class PostsListResponseDto {
 
