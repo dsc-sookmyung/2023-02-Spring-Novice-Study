@@ -14,14 +14,6 @@ public class IndexController {
 
     private final PostsService postsService;
 
-    @GetMapping("/posts/update/{id}")
-    public String postsUpdate(@PathVariable Long id, Model model) {
-        PostsResponseDto dto = postsService.findById(id);
-        model.addAttribute("post",dto);
-
-        return "posts-update";
-    }
-
     @GetMapping("/posts/save")
     public String postsSave() {
         return "posts-save";
@@ -31,5 +23,13 @@ public class IndexController {
     public String index(Model model) {
         model.addAttribute("posts", postsService.findAllDesc());
         return "index";
+    }
+
+    @GetMapping("/posts/update/{id}")
+    public String postsUpdate(@PathVariable Long id, Model model) {
+        PostsResponseDto dto = postsService.findById(id);
+        model.addAttribute("post",dto);
+
+        return "posts-update";
     }
 }
