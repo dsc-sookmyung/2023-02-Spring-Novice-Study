@@ -61,3 +61,8 @@ Dto에 적용된 롬복이 잘 작동하는지 테스트 코드를 작성해 본
 코드에서 나오는 assertj는 추가적인 라이브러리가 필요하지 않고, 자동완성이 좀 더 확실하게 지원된다는 장점이 있다.
 HelloController 에도 새로 만든 ResponseDto를 사용하도록 한다.
 그 후 추가된 API를 테스트하는 코드를 HelloControllerTest에 추가한다.
+  
+## 3장 스프링 부트에서 JPA로 데이터베이스 다뤄보자
+
+정리한 글을 올려 놓았다.
+https://dsc-sookmyung.tistory.com/596
