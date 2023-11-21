@@ -14,7 +14,7 @@ buildscript {
 plugins {
     id 'java'
     id 'eclipse'
-    id 'org.springframework.boot'version '2.7.1'
+    id 'org.springframework.boot'version '2.6.7'
     id 'io.spring.dependency-management' version '1.0.12.RELEASE'
 }
 
@@ -35,6 +35,8 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 
     runtimeOnly 'com.h2database:h2:1.4.197'
+
+    implementation('org.springframework.boot:spring-boot-starter-mustache')
 }
 
 test {
