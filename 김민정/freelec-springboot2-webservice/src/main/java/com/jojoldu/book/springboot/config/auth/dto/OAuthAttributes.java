@@ -3,7 +3,6 @@ package com.jojoldu.book.springboot.config.auth.dto;
 import com.jojoldu.book.springboot.domain.user.Role;
 import com.jojoldu.book.springboot.domain.user.User;
 import lombok.Builder;
-import lombok.Getter;
 
 import java.util.Map;
 
@@ -16,7 +15,6 @@ public class OAuthAttributes {
 
     @Builder
     public OAuthAttributes(Map<String, Object> attributes, String nameAttributeKey, String name, String email, String picture) {
-        this.attributes = attributes;
         this.nameAttributeKey = nameAttributeKey;
         this.name = name;
         this.email = email;
