@@ -20,11 +20,6 @@ public class IndexController {
     private final PostsService postsService;
     private final HttpSession httpSession;
 
-    @GetMapping("/posts/save")
-    public String postsSave() {
-        return "posts-save";
-    }
-
     @GetMapping("/")
     public String index(Model model) {
         model.addAttribute("posts", postsService.findAllDesc());
@@ -33,6 +28,11 @@ public class IndexController {
             model.addAttribute("userName", user.getName());
         }
         return "index";
+    }
+
+    @GetMapping("/posts/save")
+    public String postsSave() {
+        return "posts-save";
     }
 
     @GetMapping("/posts/update/{id}")
