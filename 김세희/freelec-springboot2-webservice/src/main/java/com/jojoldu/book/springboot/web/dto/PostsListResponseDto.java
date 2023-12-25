@@ -4,8 +4,6 @@ import com.jojoldu.book.springboot.domain.posts.Posts;
 import lombok.Getter;
 import java.time.LocalDateTime;
 
-import java.time.LocalDateTime;
-
 @Getter
 public class PostsListResponseDto {
     private Long id;
