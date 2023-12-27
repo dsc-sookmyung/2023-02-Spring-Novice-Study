@@ -15,6 +15,7 @@ public class OAuthAttributes {
     private String email;
     private String picture;
 
+    //스프링 시큐리티 설정 등록
     @Builder
     public OAuthAttributes(Map<String, Object> attributes,
                            String nameAttributeKey, String name,
