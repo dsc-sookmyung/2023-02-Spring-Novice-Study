@@ -20,6 +20,10 @@ group 'com.jojoldu.book'
 version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
+bootJar{
+    mainClassName = 'com.jojoldu.book.freelecspringboot2webservice.FreelecSpringboot2WebserviceApplication'
+}
+
 repositories {
     mavenCentral()
 }
